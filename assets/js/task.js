@@ -1,4 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { 
+    if (Notification.permission !== 'granted') {
+        Notification.requestPermission();
+      }
     const taskListContainer = document.querySelector('.taskLists');
     const taskForm = document.getElementById('taskForm');
     const taskInput = document.getElementById('taskData');
@@ -33,6 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
         taskListContainer.appendChild(taskItem);
         taskIdCounter++;
+
+        if (Notification.permission === 'granted') {
+            new Notification('Nouvelle tâche ajoutée', {
+              body: `Tâche: ${task.text}`,
+              icon: '/images/icons/icon-192x192.png' // Chemin vers votre icône
+            });
+          }
     }
 
     // Sauvegarder une tâche dans le localStorage
