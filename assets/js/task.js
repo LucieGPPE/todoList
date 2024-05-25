@@ -78,6 +78,10 @@ document.addEventListener('DOMContentLoaded', function () {
             loadTasks();
         }
     };
+    window.clearTask = function(){
+        localStorage.clear();
+        loadTasks();
+    }
 
     loadTasks();
 });
