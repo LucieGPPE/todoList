@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    overflow: hidden;
+    main{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        margin: 0 25px;
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            h2{
+                font-size: 24px;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+                font-size: 32px;
+                position: relative;
+                top: 5px;
+            }
+        }
+        .taskLists{
+            max-width: 650px;
+            margin: 0 auto;
+            overflow-y: scroll;
+            height: 100svh;
+            padding-top: 55px;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .item{
+                display: flex;
+                padding: 14px;
+                border: 1px solid #adadad;
+                border-radius: 8px;
+                box-shadow: 0px 0px 3px 0px #adadad;
+                justify-content: space-between;
+                margin: 15px 0;
+                .left{
+                    .task{
+                        margin-bottom: 10px;
+                        margin-right: 20px;
+                        font-size: 14px;
+                    }
+                    .date{
+                        color:gray;
+                        font-size: 10px;
+                    }
+                }
+                .right{
+                    a{
+                        text-decoration: none;
+                        position: relative;
+                        top: -10px;
+                        right: -8px;
+                        font-size: 24px;
+                    }
+                    .check{
+                        color: black;
+                    }
+                    .uncheck{
+                        color: #c5c5c5;
+                    }
+                }
+            }
+        }
+        .add{
+            position: fixed;
+            bottom: 10px;
+            right: 0px;
+            font-size: 55px;
+        }
+    }
+}
+
+.addTaskForm{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin-bottom: 40px;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 26px;
+            position: relative;
+            top: 5px;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 80svw;
+        max-width: 500px;
+        margin: 0 auto;
+        input, textarea{
+            margin: 20px 0;
+            padding: 6px;
+            border: 1px solid #adadad;
+            border-radius: 8px;
+            box-shadow: 0px 0px 3px 0px #adadad;
+        }
+        textarea{
+            padding: 12px;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            background-color: black;
+            color:white;
+            font-weight: 700;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            margin-top: 10px;
+        }
+    }
+}
+
+.loader{
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .top{
+        font-size: 164px;
+    }
+    h1{
+        position: relative;
+        top: -45px;
+        font-size: 48px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket</title>
+    <script src="./assets/js/anime.min.js"></script>
+    <script src="./assets/js/main.js" async></script>
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+</head>
+<body>
+    
+    <div class="loader">
+        <div class="top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M256 137c-43.5 0-82.8 5.4-110.6 13.7c-13.8 4.1-24.8 9.1-31.6 14c-6.9 4.8-8.8 8.7-8.8 11.3c0 1.7.8 3.9 3.2 6.5c13.3-9.1 30.1-15.9 48.9-21.2C186.6 153 221.3 149 256 149s69.4 4 98.9 12.3c18.8 5.3 35.6 12.1 48.9 21.2c2.4-2.6 3.2-4.8 3.2-6.5c0-2.6-1.9-6.5-8.8-11.3c-6.8-4.9-17.8-9.9-31.6-14c-27.8-8.3-67.1-13.7-110.6-13.7m0 30c-33.3 0-66.6 4-94.1 11.7c-14.2 4-26.8 9.1-37 14.9c5.8 2.7 12.7 5.4 20.5 7.7c27.8 8.3 67.1 13.7 110.6 13.7s82.8-5.4 110.6-13.7c7.8-2.3 14.7-5 20.5-7.7c-10.2-5.8-22.8-10.9-37-14.9C322.6 171 289.3 167 256 167m-147.4 38.4c-.6.6-1.2 1.1-1.8 1.7l1.7 14.4c31 18.6 89.4 29.5 147.5 29.5c11.6 0 23.3-.4 34.7-1.3c.2-6 .2-11.9.2-17.8c-11.3.7-22.9 1.1-34.9 1.1c-44.9 0-85.6-5.4-115.7-14.4c-12.5-3.8-23.1-8.1-31.7-13.2m294.8 0c-7.5 4.5-16.7 8.3-27.2 11.8c-.2 5.4-.5 11-.8 16.8c10.8-3.6 20.3-7.8 28.1-12.5l1.7-14.4c-.6-.5-1.2-1.1-1.8-1.7m-77.8 22.9c-5.4.8-11 1.5-16.7 2.1c0 5.8 0 11.7-.1 17.6c5.5-.6 11-1.4 16.3-2.2c.3-5.8.4-11.7.5-17.5m-214.5 15.1l25.5 217c6.5 8.1 21.9 16.5 42.7 21.9c22 5.7 49.3 8.7 76.7 8.7h4.5c13.9-75 26.4-149.6 29.6-223.1c-11.2.7-22.7 1.1-34.1 1.1c-54 0-107.9-7.7-144.9-25.6m289.8 0c-8.2 3.9-17.1 7.4-26.7 10.4c-5.7 83.6-18.9 187.9-24.8 223.1c12.3-4.9 21.4-10.8 26-16.5zm-76.7 21.1c-5.3.7-10.6 1.4-16 1.9c-3 74.5-15.5 149.3-29.3 223.9c5.2-.3 10.3-.8 15.3-1.3c13.3-75.4 25.7-150.6 30-224.5"/></svg>
+        </div>
+        <h1>Bucket</h1>
+    </div>
+
+    <main class="tasks">
+        <div class="top">
+            <h2>Tasks</h2>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4.55 5.5c.039.038.098.089.189.152c.306.213.815.445 1.533.656C7.695 6.727 9.72 7 12 7s4.305-.273 5.728-.692c.718-.21 1.227-.443 1.533-.656c.091-.063.15-.114.188-.152a1.396 1.396 0 0 0-.188-.152c-.306-.213-.814-.445-1.533-.656C16.305 4.273 14.28 4 12 4s-4.305.273-5.728.692c-.718.21-1.227.443-1.533.656c-.091.063-.15.114-.188.152m12.624 3.007C15.694 8.821 13.906 9 12 9c-1.906 0-3.693-.179-5.174-.493L11 13.645v6.184A3.001 3.001 0 0 0 13 17v-3.355zM21.5 5.5v.855l-6.5 8V17a5 5 0 0 1-5 5H9v-7.645l-6.5-8V5.5c0-.84.572-1.43 1.097-1.794c.554-.385 1.29-.692 2.11-.933C7.36 2.287 9.585 2 12 2s4.64.287 6.293.773c.82.241 1.556.548 2.11.933c.524.365 1.097.955 1.097 1.794"/></svg></a>
+        </div>
+
+        <div class="taskLists">
+
+            <div class="item">
+                <div class="left">
+                    <p class="task">Declutter desk and organize drawers un peu plus longs le texte</p>
+                    <p class="date">25 mai 2024 12h40</p>
+                </div>
+                <div class="right">
+                    <a href="#" class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="left">
+                    <p class="task">Un exemple de tâche qui n'a pas encore été réalisé. :)</p>
+                    <p class="date">25 mai 2024 12h40</p>
+                </div>
+                <div class="right">
+                    <a href="#" class="uncheck">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 20a8 8 0 0 0 8-8a8 8 0 0 0-8-8a8 8 0 0 0-8 8a8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10a10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67l-.75 1.23L11 13V7z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="add">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4z"/></svg>
+        </div>
+    </main>
+
+    <div class="addTaskForm">
+        <div class="top">
+            <h3>Nouvelle tâche</h3>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg>
+            </a>
+        </div>
+        <form>
+            <textarea name="task" rows="7" placeholder="Que voulez-vous ajouter ?"></textarea>
+            <input type="date">
+            <button>Ajouter</button>
+        </form>
+    </div>
+</body>
+</html>
