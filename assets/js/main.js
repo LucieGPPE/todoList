@@ -4,6 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(dLoadScreen, 2000)
     setTimeout(showApp, 2000)
 
+    document.querySelector('.close').addEventListener('click', () => {
+        document.querySelector('.addTaskForm').style.zIndex = "-1";
+        anime({
+            targets: '.addTaskForm',
+            opacity: [1, 0],
+            translateY: [0, -250],
+            easing: 'spring(1, 80, 10, 0)',
+            duration: 2000
+        });
+    });
+
     document.querySelector('.add').addEventListener('click', () => {
         document.querySelector('.addTaskForm').style.zIndex = "1";
         anime({
