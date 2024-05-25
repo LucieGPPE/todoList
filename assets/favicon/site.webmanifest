@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Bucket",
+    "short_name": "A todo list app",
     "icons": [
         {
             "src": "android-chrome-192x192.png",
